@@ -33,8 +33,12 @@ Use `admin` and `admin` as login and password values.
 
 ## Troubleshooting
 
-If 80 port is already in use, update port section
+* If 80 port is already in use, update port section
 in the `traefik` container at `docker-compose.yml` file.
+
+* If some of extensions requires some changes, `composer.patches.json` is the best place
+to store patches information. For more information read [README file](patches)
 
 [docker4drupal_readme]: https://github.com/wodby/docker4drupal/blob/5.4.0/README.md
 [drupal_project_readme]: https://github.com/drupal-composer/drupal-project/blob/8.x/README.md
+[patches]: https://github.com/cweagans/composer-patches/blob/master/README.md
